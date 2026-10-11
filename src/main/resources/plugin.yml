@@ -1,0 +1,20 @@
+name: Taxes
+version: '1.0'
+main: ru.florestdev.taxes.Taxes
+api-version: '1.21'
+prefix: Taxes
+load: STARTUP
+authors: [ FlorestDEV ]
+description: Plugin on Taxes.
+depend:
+  - Vault
+  - PassportManager
+folia-supported: true
+commands:
+  tax:
+    permission: tax.use
+    usage: /tax <country/person> <country> <count> <username (if needed)>
+
+permissions:
+  tax.use:
+    default: true
